@@ -23,7 +23,7 @@ public class CreateProject1Test {
 			js.put("projectName", projectname);
 			js.put("createdBy", "Ramit Ranjan");
 			js.put("status", "completed");
-			js.put("team size", 8);
+			js.put("team size", 9);
 			
 			RequestSpecification reqsp = RestAssured.given();
 			reqsp.body(js);
