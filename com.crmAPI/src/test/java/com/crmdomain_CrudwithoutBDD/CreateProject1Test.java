@@ -21,7 +21,7 @@ public class CreateProject1Test {
 			//creste n
 			JSONObject js=new JSONObject();
 			js.put("projectName", projectname);
-			js.put("createdBy", "Punit Ranjan");
+			js.put("createdBy", "Ramit Ranjan");
 			js.put("status", "completed");
 			js.put("team size", 8);
 			
