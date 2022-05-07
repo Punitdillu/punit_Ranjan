@@ -22,7 +22,7 @@ public class CreateProject1Test {
 			JSONObject js=new JSONObject();
 			js.put("projectName", projectname);
 			js.put("createdBy", "Ramit Ranjan");
-			js.put("status", "completed");
+			js.put("status", "on going");
 			js.put("team size", 8);
 			
 			RequestSpecification reqsp = RestAssured.given();
