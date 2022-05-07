@@ -14,7 +14,7 @@ public class CreateProject {
 			baseURI="http://localhost:8084";
 			
 			JSONObject job=new JSONObject();
-			job.put("projectName", "TCS1");
+			job.put("projectName", "Wipro1");
 			job.put("createdBy", "Punit Ranjan");
 			job.put("status", "on going");
 			job.put("teamSize", 6);
