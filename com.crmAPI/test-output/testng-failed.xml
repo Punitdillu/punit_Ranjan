@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crudWithBDD.CreateProject1BDDTest">
+      <class name="com.crudWithBDD.CreateRequestPojo">
         <methods>
-          <include name="create"/>
+          <include name="sendrequest" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.crudWithBDD.CreateProject1BDDTest -->
+      </class> <!-- com.crudWithBDD.CreateRequestPojo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

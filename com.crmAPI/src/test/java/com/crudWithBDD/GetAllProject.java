@@ -9,9 +9,13 @@ public class GetAllProject {
 		@Test
 		public void getAllProject() {
 			
+			
 			baseURI="http://localhost:8084";
-			when()
-			.get("/projects")
+			given()
+			.pathParam("pid", "TY_PROJ_811")
+			.when()
+			
+			.get("/projects/{pid}")
 			
 			.then()
 			.assertThat().statusCode(200)

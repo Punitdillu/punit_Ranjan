@@ -1,5 +1,7 @@
 package com.crudWithBDD;
 
+import org.hamcrest.Matcher;
+import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
@@ -8,6 +10,7 @@ import io.restassured.http.ContentType;
 import static io.restassured.RestAssured.*;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class CreateProject1BDDTest {
 
@@ -35,6 +38,15 @@ public class CreateProject1BDDTest {
 		.then()
 		
 		.assertThat().statusCode(201)
+		.assertThat().time(Matchers.lessThan(1500l),TimeUnit.MILLISECONDS)
+		.assertThat().header("Content-Type", "application/json")
+		.contentType("application/json")
+		.body("createdBy", Matchers.equalTo("Punit Ranjan"))
 		.log().all();
+	}
+
+	private Matcher<Long> Matcher(long l) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
